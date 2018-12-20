@@ -5,10 +5,20 @@ import emoji from 'emoji-dictionary';
 import './Card.css';
 
 class Card extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    }
+  }
   render() {
     return (
       <div className="card">
-        Card
+        <ul>
+          {this.props.text}
+          {this.props.emoji}
+          <button> Delete </button>
+        </ul>
       </div>
     )
   }
